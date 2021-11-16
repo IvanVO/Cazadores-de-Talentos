@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <title>Register new project</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Registro de Proyecto</h1>
+        <ul class="nav">
+            <li><a href="index.html">Proyectos</a></li>
+            <li>|</li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+        </ul>
+        <a href="registerProject.html">Registrar nuevo proyecto</a>
+        
+    </div>
+
+    <div id="project-registration-form">
+        <form>
+            <label>Nombre del proyecto:</label>
+            <input type="text" placeholder="Nombre...">
+            
+            <label>Descripción:</label>
+            <textarea id="" cols="40" rows="7" placeholder="Descripción del proyecto..."></textarea>
+
+            <label>Giro de proyecto:</label>
+            <input type="text" placeholder="Tipo de proyecto...">
+
+            <label>Ubicación: </label>
+            <select id="country">
+                <option value="" disabled selected>País</option>
+                <option value="Austraila">Austraila</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="México">México</option>
+                <option value="Nueva Zelanda">Nueva Zelanda</option>
+            </select>
+
+            <select id="city">
+                <option value="" disabled selected>Ciudad</option>
+                <option value="CDMX">CDMX</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Guadalajara">Guadalajara</option>
+            </select>
+
+            <button class="apply"type="submit">
+                <a href="index.html">Registrar</a>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
