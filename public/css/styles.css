@@ -1,0 +1,37 @@
+body {
+    background-color: beige;
+}
+
+.header {
+    text-align: center;
+}
+.nav {
+    padding: 0;
+}
+.nav li {
+    display: inline;
+    padding-right: 5px;
+}
+a {
+    text-decoration: none;
+}
+span {
+ font-weight: bold;   
+}
+
+.project-name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.main-content {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+.description {
+    text-align: justify;
+}
+
+.apply a:visited, .apply a{
+    color: #000000;
+}
