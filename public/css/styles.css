@@ -18,6 +18,9 @@ a {
 span {
  font-weight: bold;   
 }
+p {
+    text-align: justify;
+}
 
 .project-name{
     font-weight: bold;
