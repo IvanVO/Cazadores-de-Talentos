@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/forms.css">
-    <title>Register new project</title>
+    <title>Register new talent</title>
 </head>
 <body>
     <div class="header">
-        <h1 id="title">Registro de Proyecto</h1>
+        <h1 id="title">Registro de talento</h1>
         <ul class="nav">
             <li><a href="/">Proyectos</a></li>
             <li>|</li>
@@ -20,14 +20,32 @@
 
     <div id="project-registration-form">
         <form class= "ajax" id="form" method="GET">
-            <label>Nombre del proyecto:</label>
-            <input type="text" name="Nombre" placeholder="Nombre...">
-            
-            <label>Descripción:</label>
-            <textarea id="" name="Description" cols="40" rows="7" placeholder="Descripción del proyecto..."></textarea>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre del proveedor">
 
-            <label>Giro de proyecto:</label>
-            <input type="text" name="Proyecto" placeholder="Tipo de proyecto...">
+            <label>Edad:</label>
+            <input type="number" name="edad" placeholder="edad..">
+
+            <label>Profeción:</label>
+            <input type="text" name="profecion" placeholder="Nombre del proveedor">
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="jane.doe@example.com" >
+
+            <label>Numero:</label>
+            <input type="" name="tel" placeholder="0123456789" >
+
+            <label>Capacidades:</label>
+            <textarea  name="habilidades" rows="3" placeholder="ejem1               ejem2               ejem3"></textarea>
+            
+            <label>Horario de inicio:</label>
+            <input type="time" name="horarioEntrada" >
+
+            <label>Horario de cierre:</label>
+            <input type="time" name="horarioSalida" >
+
+            <label>Costo/hora:</label>
+            <input  type="number" name="salario" placeholder="Formato MXN" class="form-control">
 
             <label>Ubicación: </label>
             <select id="country" name="Country">

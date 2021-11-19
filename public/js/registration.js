@@ -1,12 +1,20 @@
+const $form = document.querySelector('#form');
+$form.addEventListener('submit',(evt)=>{
+    evt.preventDefault()
+});
 var array = [];
 
-document.getElementsByClassName('apply').onclick = function() {storeValues()};
-
-function storeValues() {
-    inputValue = document.querySelector('input').value;
-    
-    array.push(inputValue);
+$('form.ajax').on('submit',function () {
+    let that = $(this)
+    that.find('[name]').each(function(index, value){
+        let that = $(this),
+            name = that.attr('name');
+        value = that.val(); 
+        
+            array[name]=value;
+            that.val('');
+    });
     console.log(array);
+})
 
-    return false;
-}
+console.log("Estas usando: registration.js");

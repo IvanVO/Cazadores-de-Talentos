@@ -41,6 +41,10 @@ router.get('/registerProject', function(req, res){
     res.render('registerProject');
 });
 
+router.get('/registerTalent', function(req, res){
+    res.render('registerTalent');
+});
+
 router.get('/proyectInscription', function(req, res){
     res.render('proyectInscription');
 });
