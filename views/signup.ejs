@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Cazadores de Talento</h1>
+        <ul class="nav">
+            <li><a href="/">Proyectos</a></li>
+            <li>|</li>
+            <li><a href="/proveedores">Proveedores</a></li>
+        </ul>
+        <a href="/registerProject">Registrar nuevo proyecto</a> 
+    </div>
+    <div id="parent">
+        <h3>Crear cuenta</h3>
+        <form class= "ajax" id="form" action="/newUser" method="POST" id="registration-form">
+            <label>Nombre: </label>
+            <input type="text" name="full_name" placeholder="Escribe tu nombre...">
+            <span></span>
+            <label>Edad: </label>
+            <input type="number" name="age" placeholder="Escribe tu edad...">
+            <span></span>
+            <label>Correo: </label>
+            <input type="email" name="email" placeholder="Escribe tu correo...">
+            <span></span>
+            <label>Celular: </label>
+            <input type="number" name="phone" placeholder="Escribe tu número..">
+            <span></span>
+            <label>LinkedIn: </label>
+            <input type="text" name="linkedin" placeholder="LinkedIn URL...">
+            <span></span>
+            <label>Tipo de usuario: </label>
+            <select name ="usertype" id="user-type">
+                <option value="Cazador" default>Cazador</option>
+                <option value="Talento">Proveedor de Talento</option>
+            </select>
+            <span></span>
+            <br>
+            <input class="apply" type="submit" value="Crear cuenta"></input>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/registerUser.js"></script>
+
+</body>
+</html>

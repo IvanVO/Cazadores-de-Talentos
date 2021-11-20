@@ -1,5 +1,4 @@
 import {app, router, mypath} from './config.mjs';
-
 var talentHunters = [];
 
 const projectInfo = {
@@ -51,4 +50,8 @@ router.get('/proyectInscription', function(req, res){
 
 router.get('/perfilProveedor', function(req, res){
     res.render('perfilProveedor');
+});
+
+router.get('/registroUsuario', function(req, res){
+    res.render('signup');
 });

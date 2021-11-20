@@ -1,0 +1,24 @@
+#parent {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    margin-top: 5%;
+}
+h3 {
+    text-align: center;
+}
+label, button{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 110px;
+    text-align: left;
+}
+input, select, button{
+  display: inline-block;
+  float: left;
+}
+
+a:visited, a{
+    color: #000000;
+}
